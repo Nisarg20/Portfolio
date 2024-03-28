@@ -453,7 +453,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                  <img src="./assets/images/movie.png" alt="finance" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Movie Recommendation System</h3>
@@ -471,7 +471,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                  <img src="./assets/images/image.png" alt="orizon" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Single Image Dehazing</h3>
@@ -489,7 +489,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                  <img src="./assets/images/slash.png" alt="fundo" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Slash</h3>
@@ -507,7 +507,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                  <img src="./assets/images/expense_bot.png" alt="brawlhalla" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">MyExpenseBot</h3>
@@ -524,7 +524,7 @@
                       <ion-icon name="eye-outline"></ion-icon>
                     </div>
   
-                    <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                    <img src="./assets/images/Expertiza.png" alt="brawlhalla" loading="lazy">
                   </figure>
   
                   <h3 class="project-title">Expertiza</h3>
@@ -541,7 +541,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                  <img src="./assets/images/wolf.png" alt="brawlhalla" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">WolfEvents</h3>
@@ -559,7 +559,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                  <img src="./assets/images/Plant.png" alt="dsm." loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Plant Disease Detection.</h3>
@@ -577,7 +577,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                  <img src="./assets/images/exam.gif" alt="dsm." loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Online Examination Portal.</h3>
@@ -595,7 +595,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                  <img src="./assets/images/disaster.png" alt="dsm." loading="lazy">
                 </figure>
 
                 <h3 class="project-title">CareALot.</h3>
@@ -613,7 +613,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                  <img src="./assets/images/cricket.gif" alt="dsm." loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Cricket Analysis.</h3>
@@ -648,20 +648,17 @@
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="#" class="form" data-form>
+          <form id="contactForm" class="form">
 
             <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+              <input type="text" name="fullname" id="fullname" class="form-input" placeholder="Full name" required>
+              <button id="submitBtn" class="form-btn" type="button">
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
+            <textarea name="message" id="message" class="form-input" placeholder="Your Message" required></textarea>
 
           </form>
 
@@ -687,10 +684,10 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script>
     const skillsData = {
-      labels: ['Python', 'Java: Spring/SpringBoot', 'C++', 'HTML/CSS', 'JavaScript: Next.js/Express.js', 'React.js/Node.js', 'Ruby: Rails', 'Databases: MySQL/MongoDB', 'Version Control: Git/GitHub'],
+      labels: ['Python', 'Java: Spring/SpringBoot', 'C++', 'HTML/CSS', 'JavaScript: Next.js/Express.js', 'React.js/Node.js', 'Ruby: Rails', 'Databases: MySQL/MongoDB', 'Version Control: Git/GitHub', 'TypeScript'],
       datasets: [{
         label: 'Skill Level (%)',
-        data: [98, 70, 90, 50, 50, 50, 50, 50, 50],
+        data: [98, 70, 90, 50, 50, 50, 50, 50, 50, 90],
         backgroundColor: [
           'rgba(255, 99, 132, 0.2)',
           'rgba(54, 162, 235, 0.2)',
@@ -734,6 +731,7 @@
       options: skillsOptions
     });
   </script>
+  <script src="./assets/js/contact.js"></script>
   
 </body>
 
